@@ -1,0 +1,52 @@
+@model Laboration2.Models.EducationModel
+
+@{
+    ViewData["title"]= "Add";
+}
+<div class="home">
+    <h2> Add Education Page </h2>
+    <form method="post">
+        <label asp-for="University"> </label>
+        <br>
+        <input type="text" asp-for="University">
+        <span asp-validation-for="University"></span>
+        <br>
+
+        <label asp-for="StartDate"> </label>
+        <br>
+        <input type="date" asp-for="StartDate"/>
+        <span asp-validation-for="StartDate"></span>
+        <br>
+
+
+        <label asp-for="EndDate"> </label>
+        <br>
+        <input type="date" asp-for="EndDate"/>
+        <span asp-validation-for="EndDate"></span>
+        <br>
+
+        <label asp-for="Education"> </label>
+        <br>
+        <input type="text" asp-for="Education">
+        <span asp-validation-for="Education"></span>
+        <br>
+
+        <label asp-for="Duration"> </label>
+        <br>
+        @* <option> element generated in js file  *@
+        <select asp-for="Duration" id="selectYear">
+        </select>
+        <span asp-validation-for="Duration"></span>
+        <br><br>
+
+        <label asp-for="Done"></label>
+        <br />
+        <input type="radio" asp-for="Done" value="Yes" /> Yes
+        <input type="radio" asp-for="Done" value="No" /> No
+        <span asp-validation-for="Done"></span>
+
+        <br />
+        <input type="submit" value="Add Education" class="addBtn" />
+
+    </form>
+</div>

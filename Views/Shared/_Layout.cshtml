@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> @ViewData["title"]</title>
+    <link rel="stylesheet" href="/css/site.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-row">
+        <a asp-controller="Home" asp-action="Index"> 
+            <h1> Laboration 2</h1>
+        </a>
+    </div>
+    </header>
+    <main class="container">
+        
+        @Html.Partial("_Nav")
+
+        <div class="content">
+            @RenderBody()
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p> By Alaa Zaza, Contact me via: <a href = "mailto: alza2100@student.miun.se">alza2100@student.miun.se</a> </p>
+        </div>
+    </footer>
+    @* <script src="/js/site.js"></script> *@
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

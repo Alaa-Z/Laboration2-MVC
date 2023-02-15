@@ -1,0 +1,26 @@
+[
+  {
+    "University": "Mid Sweden University,",
+    "StartDate": "2021-09-01T00:00:00",
+    "EndDate": "2023-06-05T00:00:00",
+    "Duration": "2",
+    "Education": "Web Development Program",
+    "Done": "No",
+    "StartYear": "21",
+    "EndYear": "23",
+    "StartMonth": "September",
+    "EndMonth": "June"
+  },
+  {
+    "University": "Damascus University",
+    "StartDate": "2009-08-15T00:00:00",
+    "EndDate": "2014-08-15T00:00:00",
+    "Duration": "5",
+    "Education": "Electronics & Communication Engineering",
+    "Done": "Yes",
+    "StartYear": "2009",
+    "EndYear": "2014",
+    "StartMonth": "August",
+    "EndMonth": "August"
+  }
+]

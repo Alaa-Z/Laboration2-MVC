@@ -1,0 +1,159 @@
+body {
+  background-color: #000000;
+  color: #e5e5e5;
+  font-size: 18px;
+  line-height: 1.7;
+}
+a{
+  color:inherit;
+  text-decoration: none;
+}
+.header-row {
+  height: 20vh;
+  border-bottom: 2px solid #fca311;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-row h1 {
+  margin-top:5vh;
+  margin-left:5vw;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  display:grid;
+  grid-template-columns: 25% 72%;
+  grid-gap: 3%;
+  margin-top:30px;
+  min-height: 120vh;
+}
+.aside {
+  border: 2px solid #fca311;
+}
+.aside ul{
+  list-style: none;
+  padding-inline-start: 0px;
+}
+.aside a, .aside li{
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+}
+.aside li:hover{
+  background-color: #e5e5e5;
+  color: black;
+}
+.content {
+  border: 2px solid #fca311;
+
+}
+.home{
+  width: 80%;
+  margin: auto;
+}
+
+.light{
+  background-color: #e5e5e5;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+footer {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fca311;
+  max-width: 1200px;
+  width: 95%;
+  margin: auto;
+  margin-top:30px;
+}
+footer a {
+  text-decoration: underline;
+}
+
+form input[type=text]{
+  margin-top: 5px;
+  height: 30px;
+  width: 50%;
+  border: 1px solid #fca311;
+  margin-right: 20px;
+  margin-bottom:20px;
+
+}
+
+form input[type=date]{
+  margin-top: 5px;
+  height: 30px;
+  width: 50%;
+  border: 1px solid #fca311;
+  margin-bottom:20px;
+}
+
+.addBtn{
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  background-color: #fca311;
+  color: #f0ebd8;
+  width: 140px;
+  font-size: 0.8em;
+  margin-top: 6px;
+}
+span{
+  color: red ;
+}
+
+ul li{
+  float: left;
+  list-style: none;
+  display: block;
+  margin: 0 1rem 1rem 0; 
+
+}
+section{
+  margin-top: 5px;
+  border: 1px solid #fca311;
+  padding-left: 20px;
+  margin-bottom:50px;
+}
+section p{
+  margin-bottom: -10px;
+}
+h4{
+  color: #fca311;
+}
+section p:last-of-type{
+  margin-bottom: 30px;
+}
+@media (max-width: 700px) {
+  .container {
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .aside {
+    margin-bottom: 20px;
+  }
+  .aside ul{
+    display: flex;
+    flex-direction: column;
+ 
+  }
+  .aside a, .aside li{
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+  }
+  footer{
+    width: 90%;
+  }
+
+}
+

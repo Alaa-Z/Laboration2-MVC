@@ -1,0 +1,21 @@
+@model List<Laboration2.Models.EducationModel>
+
+@{
+    ViewData["title"]= "Education";
+}
+<div class="home">
+    <h2>  Educations Page </h2>
+    <h3> List of all Educations:</h3>
+
+        @foreach (var item in Model)
+        {
+            <section>
+            <h4> @item.University </h4> 
+            <p> From: @item.StartMonth  @item.StartYear  To: @item.EndMonth  @item.EndYear </p>
+            <p><i>@item.Education </i></p>
+            <p>@item.Duration Year</p>
+            </section>
+        }
+       
+</div>
+
